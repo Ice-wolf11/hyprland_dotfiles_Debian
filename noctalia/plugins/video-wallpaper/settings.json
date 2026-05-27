@@ -1,0 +1,17 @@
+{
+  "activeBackend": "qt6-multimedia",
+  "automationMode": "random",
+  "automationTime": 300,
+  "fillMode": "fit",
+  "mpvSocket": "/tmp/mpv-socket",
+  "profile": "default",
+  "volume": 1,
+  "wallpapersFolder": "/home/andrew/Vídeos/fondos",
+  "thumbCacheReady": true,
+  "Virtual-1": {
+    "currentWallpaper": "",
+    "noctaliaWallpaper": "/home/andrew/Descargas/atardecer-nubes-rosas-en-costa-mar_2912x1632_xtrafondos.com.jpg",
+    "isPlaying": true
+  },
+  "enabled": false
+}
