@@ -9,9 +9,19 @@
   "wallpapersFolder": "/home/andrew/Vídeos/fondos",
   "thumbCacheReady": true,
   "Virtual-1": {
-    "currentWallpaper": "",
+    "currentWallpaper": "/home/andrew/Vídeos/fondos/meteorite-neverness-to-everness-moewalls-com.mp4",
     "noctaliaWallpaper": "/home/andrew/Descargas/atardecer-nubes-rosas-en-costa-mar_2912x1632_xtrafondos.com.jpg",
-    "isPlaying": true
+    "isPlaying": true,
+    "volume": 1,
+    "automation": false,
+    "automationMode": "random",
+    "automationTime": 300,
+    "hardwareAcceleration": false,
+    "profile": "default",
+    "fillMode": "",
+    "orientation": 0
   },
-  "enabled": false
+  "enabled": false,
+  "monitorSpecific": false,
+  "automationCustomTime": []
 }
