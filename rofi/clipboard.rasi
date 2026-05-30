@@ -1,53 +1,85 @@
 configuration {
     modi: "drun,run,window";
     show-icons: true;
+    drun-display-format: "{icon}  {name}";
     font: "JetBrainsMono Nerd Font 11";
 }
-
+/*
 * {
-    bg: #1e1e2e;
-    bg-alt: #313244;
-    fg: #cdd6f4;
+    bg:             #11111bdd;
+    bg-alt:         #1e1e2edd;
+    fg:             #cdd6f4;
+    fg-alt:         #89b4fa;
 
-    selected: #89b4fa;
+    background-color:   transparent;
+    text-color:         @fg;
+
+    border:     0;
+    margin:     0;
+    padding:    0;
+    spacing:    0;
+}*/
+
+
+
+*{
+    bg: #11111bdd;
+    bg-alt: #1e1e2edd;
+    fg: #cdd6f4;
+    fg-alt: #89b4fa;
+
+    selected: #89b4fa22;
     active: #a6e3a1;
     urgent: #f38ba8;
-
-    border-colour: #89b4fa;
-
+    
+    //border-colour: #89b4fa;
+    background-color: transparent;
+    text-color: @fg;
     width: 900;
+    border:     0;
+    margin:     0;
+    padding:    0;
+    spacing:    0;
 }
 
 window {
-    transparency: "real";
-    location: center;
-    anchor: center;
+    //transparency: "real";
+    //location: center;
+    //anchor: center;
 
     fullscreen: false;
-    width: 900px;
+    width: 600px;
 
     border: 2px;
-    border-color: @border-colour;
-
-    border-radius: 12px;
+    border-color: #cba6f7ff;
+    padding: 20px;
+    border-radius: 18px;
 
     background-color: @bg;
 }
 
 mainbox {
-    children: [inputbar, listview];
-    spacing: 10px;
-    padding: 12px;
+    //children: [inputbar, listview];
+    spacing: 20px;
+    padding: 24px;
 }
 
 inputbar {
     background-color: @bg-alt;
-    border-radius: 8px;
-    padding: 10px;
+    border-radius: 14px;
+    padding: 14px;
 }
 
+
+
 prompt {
-    text-color: @selected;
+    //text-color: @selected;
+    enabled: false;
+}
+
+entry{
+    placeholder: "Buscar...";
+    placeholder-color: #6c7086;
 }
 
 entry {
@@ -55,18 +87,21 @@ entry {
 }
 
 listview {
-    lines: 12;
+    lines: 5;
     columns: 1;
     spacing: 6;
     scrollbar: false;
 }
 
 element {
-    padding: 10px;
-    border-radius: 8px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: transparent;
 }
 
 element selected {
     background-color: @selected;
-    text-color: #11111b;
+    text-color: @fg-alt;
 }
+
+

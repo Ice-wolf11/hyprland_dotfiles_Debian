@@ -1,3 +1,11 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: "Apps";
+    drun-display-format: "{icon}  {name}";
+    font: "JetBrainsMono Nerd Font 12";
+}
+
 * {
     bg:             #11111bdd;
     bg-alt:         #1e1e2edd;
@@ -14,31 +22,33 @@
 }
 
 window {
-    width:              700px;
+    width:              720px;
     border-radius:      18px;
     background-color:   @bg;
     border:             2px;
-    border-color:       #89b4fa;
+    border-color:       #cba6f7ff;
     padding:            20px;
 }
 
 mainbox {
-    spacing: 15px;
+    spacing: 20px;
+    padding: 24px;
 }
 
 inputbar {
     background-color: @bg-alt;
-    border-radius: 12px;
-    padding: 12px;
+    border-radius: 14px;
+    padding: 14px;
 }
 
 prompt {
-    text-color: @fg-alt;
-    padding: 0 10px 0 0;
+    //text-color: @fg-alt;
+    //padding: 0 10px 0 0;
+    enabled: false;
 }
 
 entry {
-    placeholder: "Search...";
+    placeholder: "Buscar Aplicaciones...";
     placeholder-color: #6c7086;
 }
 
@@ -47,10 +57,10 @@ message {
 }
 
 listview {
-    lines: 8;
-    columns: 1;
+    lines: 6;
+    columns: 2;
     fixed-height: false;
-    spacing: 8px;
+    spacing: 12px;
     margin: 10px 0 0;
 }
 

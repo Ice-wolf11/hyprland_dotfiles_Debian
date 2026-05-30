@@ -1,0 +1,115 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: "Apps";
+    drun-display-format: "{icon}  {name}";
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+* {
+    bg: #11111b88;
+    bg-alt: #1e1e2e99;
+
+    fg: #cdd6f4;
+    fg-alt: #a6adc8;
+
+    selected: #89b4fa;
+
+    border-color: #313244;
+}
+
+/*window {
+    width: 720px;
+
+    location: center;
+    anchor: center;
+
+    transparency: "real";
+
+    background-color: @bg;
+
+    border: 2px;
+    border-color: @border-color;
+
+    border-radius: 22px;
+}*/
+
+window {
+    width: 720px;
+
+    location: center;
+    anchor: center;
+
+    transparency: "real";
+
+    background-color: #00000055;
+
+    border: 2px;
+    border-color: #45475a;
+
+    border-radius: 22px;
+}
+
+mainbox {
+    spacing: 20px;
+    padding: 24px;
+}
+
+/*inputbar {
+    background-color: @bg-alt;
+
+    border-radius: 14px;
+
+    padding: 14px;
+}*/
+
+inputbar {
+    background-color: #1e1e2eaa;
+
+    border-radius: 14px;
+
+    padding: 14px;
+}
+
+prompt {
+    enabled: false;
+}
+
+entry {
+    text-color: @fg;
+
+    placeholder: "Buscar aplicaciones...";
+    placeholder-color: @fg-alt;
+}
+
+listview {
+    lines: 6;
+    columns: 2;
+
+    spacing: 12px;
+    scrollbar: false;
+}
+
+element {
+    padding: 12px;
+
+    border-radius: 14px;
+
+    background-color: transparent;
+}
+
+element selected {
+    background-color: @selected;
+}
+
+element-text {
+    text-color: @fg;
+}
+
+element selected element-text {
+    text-color: #11111b;
+}
+
+element-icon {
+    size: 30px;
+}
