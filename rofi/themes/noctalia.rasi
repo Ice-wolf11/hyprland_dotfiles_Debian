@@ -7,7 +7,7 @@ configuration {
 }
 
 * {
-    bg:             #00000055;
+    bg:             #00000022;
     bg-alt:         #1e1e2edd;
     fg:             #cdd6f4;
     fg-alt:         #89b4fa;
