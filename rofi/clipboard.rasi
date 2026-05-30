@@ -23,7 +23,7 @@ configuration {
 
 
 *{
-    bg: #11111bdd;
+    bg: #00000055;
     bg-alt: #1e1e2edd;
     fg: #cdd6f4;
     fg-alt: #89b4fa;

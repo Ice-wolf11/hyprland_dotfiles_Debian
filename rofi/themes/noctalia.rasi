@@ -7,7 +7,7 @@ configuration {
 }
 
 * {
-    bg:             #11111bdd;
+    bg:             #00000055;
     bg-alt:         #1e1e2edd;
     fg:             #cdd6f4;
     fg-alt:         #89b4fa;
@@ -22,6 +22,7 @@ configuration {
 }
 
 window {
+    //transparent: "real";
     width:              720px;
     border-radius:      18px;
     background-color:   @bg;
@@ -37,6 +38,7 @@ mainbox {
 
 inputbar {
     background-color: @bg-alt;
+    //border-color: #cba6f7ff;
     border-radius: 14px;
     padding: 14px;
 }
@@ -50,6 +52,7 @@ prompt {
 entry {
     placeholder: "Buscar Aplicaciones...";
     placeholder-color: #6c7086;
+
 }
 
 message {
