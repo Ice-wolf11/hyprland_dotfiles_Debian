@@ -153,7 +153,7 @@
         "predefinedScheme": "Horizon",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -335,15 +335,15 @@
     },
     "idle": {
         "customCommands": "[]",
-        "enabled": true,
+        "enabled": false,
         "fadeDuration": 5,
-        "lockCommand": "hyprlock",
-        "lockTimeout": 660,
+        "lockCommand": "",
+        "lockTimeout": 610,
         "resumeLockCommand": "",
         "resumeScreenOffCommand": "",
         "resumeSuspendCommand": "",
         "screenOffCommand": "",
-        "screenOffTimeout": 601,
+        "screenOffTimeout": 600,
         "suspendCommand": "",
         "suspendTimeout": 1800
     },
@@ -387,7 +387,7 @@
         "disableWallpaper": true
     },
     "notifications": {
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.75,
         "clearDismissed": true,
         "criticalUrgencyDuration": 15,
         "density": "default",
@@ -437,22 +437,22 @@
         "notifyUpdates": true
     },
     "sessionMenu": {
-        "countdownDuration": 10000,
-        "enableCountdown": true,
+        "countdownDuration": 1000,
+        "enableCountdown": false,
         "largeButtonsLayout": "single-row",
         "largeButtonsStyle": true,
         "position": "center",
         "powerOptions": [
             {
                 "action": "lock",
-                "command": "",
+                "command": "pidof hyprlock || hyprlock",
                 "countdownEnabled": true,
                 "enabled": true,
                 "keybind": "1"
             },
             {
                 "action": "suspend",
-                "command": "",
+                "command": "pidof hyprlock || hyprlock\nsleep 1\nsystemctl suspend",
                 "countdownEnabled": true,
                 "enabled": true,
                 "keybind": "2"
