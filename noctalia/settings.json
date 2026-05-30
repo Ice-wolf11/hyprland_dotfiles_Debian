@@ -33,7 +33,7 @@
         "preferredPlayer": "",
         "spectrumFrameRate": 30,
         "spectrumMirrored": true,
-        "visualizerType": "linear",
+        "visualizerType": "mirrored",
         "volumeFeedback": false,
         "volumeFeedbackSoundFile": "",
         "volumeOverdrive": false,
@@ -79,24 +79,99 @@
         "widgets": {
             "center": [
                 {
-                    "id": "Workspace"
+                    "id": "Clock"
                 }
             ],
             "left": [
                 {
-                    "id": "Launcher"
+                    "colorizeSystemIcon": "none",
+                    "colorizeSystemText": "none",
+                    "generalTooltipText": "",
+                    "hideMode": "alwaysExpanded",
+                    "icon": "zodiac-leo",
+                    "iconPosition": "left",
+                    "id": "CustomButton",
+                    "ipcIdentifier": "",
+                    "leftClickExec": "rofi -show drun -theme ~/.config/rofi/themes/noctalia.rasi",
+                    "leftClickUpdateText": true,
+                    "maxTextLength": {
+                        "horizontal": 10,
+                        "vertical": 10
+                    },
+                    "middleClickExec": "",
+                    "middleClickUpdateText": false,
+                    "parseJson": false,
+                    "rightClickExec": "cliphist list | rofi -dmenu -theme ~/.config/rofi/clipboard.rasi | cliphist decode | wl-copy",
+                    "rightClickUpdateText": true,
+                    "showExecTooltip": true,
+                    "showIcon": true,
+                    "showTextTooltip": true,
+                    "textCollapse": "",
+                    "textCommand": "",
+                    "textIntervalMs": 3000,
+                    "textStream": false,
+                    "wheelDownExec": "",
+                    "wheelDownUpdateText": false,
+                    "wheelExec": "",
+                    "wheelMode": "unified",
+                    "wheelUpExec": "",
+                    "wheelUpUpdateText": false,
+                    "wheelUpdateText": false
                 },
                 {
-                    "id": "Clock"
-                },
-                {
-                    "id": "SystemMonitor"
+                    "characterCount": 2,
+                    "colorizeIcons": false,
+                    "emptyColor": "secondary",
+                    "enableScrollWheel": true,
+                    "focusedColor": "primary",
+                    "followFocusedScreen": false,
+                    "fontWeight": "bold",
+                    "groupedBorderOpacity": 1,
+                    "hideUnoccupied": false,
+                    "iconScale": 0.8,
+                    "id": "Workspace",
+                    "labelMode": "index",
+                    "occupiedColor": "secondary",
+                    "pillSize": 0.6,
+                    "showApplications": false,
+                    "showApplicationsHover": false,
+                    "showBadge": false,
+                    "showLabelsOnlyWhenOccupied": false,
+                    "unfocusedIconsOpacity": 1
                 },
                 {
                     "id": "MediaMini"
+                },
+                {
+                    "colorName": "primary",
+                    "hideWhenIdle": true,
+                    "id": "AudioVisualizer",
+                    "width": 100
                 }
             ],
             "right": [
+                {
+                    "compactMode": true,
+                    "diskPath": "/",
+                    "iconColor": "none",
+                    "id": "SystemMonitor",
+                    "showCpuCores": false,
+                    "showCpuFreq": false,
+                    "showCpuTemp": true,
+                    "showCpuUsage": true,
+                    "showDiskAvailable": false,
+                    "showDiskUsage": false,
+                    "showDiskUsageAsPercent": false,
+                    "showGpuTemp": false,
+                    "showLoadAverage": false,
+                    "showMemoryAsPercent": false,
+                    "showMemoryUsage": true,
+                    "showNetworkStats": false,
+                    "showSwapUsage": false,
+                    "textColor": "none",
+                    "useMonospaceFont": true,
+                    "usePadding": false
+                },
                 {
                     "id": "Tray"
                 },
@@ -107,16 +182,13 @@
                     "id": "Volume"
                 },
                 {
-                    "id": "Brightness"
-                },
-                {
-                    "id": "ControlCenter"
-                },
-                {
                     "id": "plugin:video-wallpaper"
                 },
                 {
                     "id": "plugin:kde-connect"
+                },
+                {
+                    "id": "ControlCenter"
                 }
             ]
         }
@@ -216,10 +288,54 @@
         }
     },
     "desktopWidgets": {
-        "enabled": false,
+        "enabled": true,
         "gridSnap": false,
-        "gridSnapScale": false,
+        "gridSnapScale": true,
         "monitorWidgets": [
+            {
+                "name": "Virtual-1",
+                "widgets": [
+                    {
+                        "hideMode": "visible",
+                        "id": "MediaPlayer",
+                        "roundedCorners": true,
+                        "scale": 1.15,
+                        "showAlbumArt": true,
+                        "showBackground": false,
+                        "showButtons": true,
+                        "showVisualizer": false,
+                        "visualizerType": "linear",
+                        "x": 440,
+                        "y": 280
+                    },
+                    {
+                        "colorName": "primary",
+                        "height": 72,
+                        "hideWhenIdle": false,
+                        "id": "AudioVisualizer",
+                        "roundedCorners": true,
+                        "scale": 0.875,
+                        "showBackground": false,
+                        "visualizerType": "linear",
+                        "width": 320,
+                        "x": 480,
+                        "y": 300
+                    },
+                    {
+                        "clockColor": "none",
+                        "clockStyle": "minimal",
+                        "customFont": "",
+                        "format": "HH:mm\\nd MMMM yyyy",
+                        "id": "Clock",
+                        "roundedCorners": true,
+                        "scale": 2.0298082928814645,
+                        "showBackground": false,
+                        "useCustomFont": false,
+                        "x": 520,
+                        "y": 100
+                    }
+                ]
+            }
         ],
         "overviewEnabled": true
     },
@@ -376,8 +492,8 @@
     "nightLight": {
         "autoSchedule": true,
         "dayTemp": "6500",
-        "enabled": true,
-        "forced": true,
+        "enabled": false,
+        "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "nightTemp": "4000"
@@ -501,7 +617,7 @@
             }
         ],
         "showHeader": true,
-        "showKeybinds": true
+        "showKeybinds": false
     },
     "settingsVersion": 59,
     "systemMonitor": {
