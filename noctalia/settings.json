@@ -289,7 +289,7 @@
     },
     "desktopWidgets": {
         "enabled": true,
-        "gridSnap": false,
+        "gridSnap": true,
         "gridSnapScale": true,
         "monitorWidgets": [
             {
@@ -335,6 +335,50 @@
                         "y": 100
                     }
                 ]
+            },
+            {
+                "name": "HDMI-A-1",
+                "widgets": [
+                    {
+                        "clockColor": "none",
+                        "clockStyle": "minimal",
+                        "customFont": "",
+                        "format": "HH:mm\\nd MMMM yyyy",
+                        "id": "Clock",
+                        "roundedCorners": true,
+                        "scale": 2.6436918099550417,
+                        "showBackground": false,
+                        "useCustomFont": false,
+                        "x": 800,
+                        "y": 140
+                    },
+                    {
+                        "hideMode": "idle",
+                        "id": "MediaPlayer",
+                        "roundedCorners": true,
+                        "scale": 1.3,
+                        "showAlbumArt": true,
+                        "showBackground": false,
+                        "showButtons": true,
+                        "showVisualizer": false,
+                        "visualizerType": "linear",
+                        "x": 680,
+                        "y": 380
+                    },
+                    {
+                        "colorName": "primary",
+                        "height": 72,
+                        "hideWhenIdle": false,
+                        "id": "AudioVisualizer",
+                        "roundedCorners": true,
+                        "scale": 1.125,
+                        "showBackground": false,
+                        "visualizerType": "linear",
+                        "width": 320,
+                        "x": 760,
+                        "y": 400
+                    }
+                ]
             }
         ],
         "overviewEnabled": true
@@ -378,7 +422,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "/home/andrew/.face",
+        "avatarImage": "/home/andrew/Descargas/Blanka Icon.jpeg",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "digital",
@@ -476,7 +520,7 @@
         "use12hourFormat": true,
         "useFahrenheit": false,
         "weatherEnabled": true,
-        "weatherShowEffects": true,
+        "weatherShowEffects": false,
         "weatherTaliaMascotAlways": false
     },
     "network": {
@@ -568,7 +612,7 @@
             },
             {
                 "action": "suspend",
-                "command": "pidof hyprlock || hyprlock\nsleep 1\nsystemctl suspend",
+                "command": "systemctl suspend",
                 "countdownEnabled": true,
                 "enabled": true,
                 "keybind": "2"
@@ -650,7 +694,7 @@
     },
     "ui": {
         "boxBorderEnabled": false,
-        "fontDefault": "Sans Serif",
+        "fontDefault": "CaskaydiaMono NF",
         "fontDefaultScale": 1,
         "fontFixed": "monospace",
         "fontFixedScale": 1,
@@ -664,7 +708,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/andrew/Descargas",
+        "directory": "/home/andrew/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [

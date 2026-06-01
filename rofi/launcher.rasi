@@ -1,11 +1,10 @@
 configuration {
-    modi: "drun";
+    modi: "drun,window";
     show-icons: true;
     display-drun: "Apps";
     drun-display-format: "{icon}  {name}";
     font: "JetBrainsMono Nerd Font 12";
 }
-
 * {
     bg: #11111b88;
     bg-alt: #1e1e2e99;
