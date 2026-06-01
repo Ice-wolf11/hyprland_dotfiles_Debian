@@ -14,7 +14,7 @@ configuration {
 
     background-color:   transparent;
     text-color:         @fg;
-
+    //width: 900px;
     border:     0;
     margin:     0;
     padding:    0;
@@ -23,8 +23,9 @@ configuration {
 
 window {
     //transparent: "real";
+    //fullscreen: false;
     width:              720px;
-    border-radius:      18px;
+    border-radius:      10px;
     background-color:   @bg;
     border:             2px;
     border-color:       #cba6f7ff;
@@ -62,7 +63,7 @@ message {
 listview {
     lines: 6;
     columns: 2;
-    fixed-height: false;
+    fixed-height: true;
     spacing: 12px;
     margin: 10px 0 0;
 }

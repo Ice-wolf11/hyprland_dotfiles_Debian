@@ -45,7 +45,7 @@
         "backgroundOpacity": 0,
         "barType": "floating",
         "capsuleColorKey": "none",
-        "capsuleOpacity": 1,
+        "capsuleOpacity": 0.78,
         "contentPadding": 2,
         "density": "compact",
         "displayMode": "always_visible",
@@ -73,7 +73,7 @@
         ],
         "showCapsule": true,
         "showOnWorkspaceSwitch": true,
-        "showOutline": false,
+        "showOutline": true,
         "useSeparateOpacity": true,
         "widgetSpacing": 6,
         "widgets": {

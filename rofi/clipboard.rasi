@@ -53,7 +53,7 @@ window {
     border: 2px;
     border-color: #cba6f7ff;
     padding: 20px;
-    border-radius: 18px;
+    border-radius: 10px;
 
     background-color: @bg;
 }
