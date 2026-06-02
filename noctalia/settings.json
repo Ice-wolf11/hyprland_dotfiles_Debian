@@ -362,7 +362,7 @@
                         "showButtons": true,
                         "showVisualizer": false,
                         "visualizerType": "linear",
-                        "x": 680,
+                        "x": 700,
                         "y": 380
                     },
                     {
@@ -371,11 +371,11 @@
                         "hideWhenIdle": false,
                         "id": "AudioVisualizer",
                         "roundedCorners": true,
-                        "scale": 1.125,
+                        "scale": 1.1875,
                         "showBackground": false,
                         "visualizerType": "linear",
                         "width": 320,
-                        "x": 760,
+                        "x": 800,
                         "y": 400
                     }
                 ]

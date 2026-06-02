@@ -1,0 +1,53 @@
+            ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+                                                           ATAJOS DE HYPRLAND
+            ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+
+                        󰆍 APLICACIONES                    󰆾 ESPACIOS DE TRABAJO              󰕾 AUDIO
+                      ───────────────────────            ───────────────────────            ───────────────────────
+                      SUPER + ENTER  Terminal            SUPER + 1-8      Workspace        VOL +      Subir volumen
+                      SUPER + B      Brave               SUPER + CTRL + → Siguiente        VOL -      Bajar volumen
+                      SUPER + E      Dolphin             SUPER + CTRL + ← Anterior         MUTE       Silenciar salida
+                      SUPER + SPACE  Rofi                                                  MIC MUTE   Silenciar micrófono
+
+
+                        󰖳 VENTANAS                        󰯌 MOVER VENTANAS                  󰻃 GRABACIÓN
+                      ───────────────────────            ───────────────────────            ───────────────────────
+                      SUPER + Q       Cerrar             SUPER + SHIFT + 1-8              SUPER + CTRL + R
+                      SUPER + F       Fullscreen         Mover a workspace                Iniciar grabación
+                      
+                      SUPER + CTRL+V Flotante            SUPER + CTRL + ALT + →           SUPER + CTRL + SHIFT + R
+                      SUPER + CTRL+P Pseudotiling        Workspace siguiente              Detener grabación
+
+                      SUPER + SHIFT+K Frente             SUPER + CTRL + ALT + ←
+                      SUPER + SHIFT+J Fondo              Workspace anterior
+
+
+                        󰍽 RATÓN                           󰘶 SCRATCHPAD                      󰌾 SISTEMA
+                      ───────────────────────            ───────────────────────            ───────────────────────
+                      SUPER + Click Izq.                 SUPER + S       Mostrar           SUPER + L  Bloquear pantalla
+                      Mover ventana                      SUPER + SHIFT S Enviar            SUPER + H  Mostrar ayuda
+
+                      SUPER + Click Der.
+                      Redimensionar
+
+
+                        󰌹 NAVEGACIÓN                      󰍹 PORTAPAPELES
+                      ───────────────────────            ───────────────────────
+                      SUPER + ←  Izquierda               SUPER + V  Historial Cliphist
+                      SUPER + →  Derecha
+                      SUPER + ↑  Arriba
+                      SUPER + ↓  Abajo
+
+                      ALT + TAB Selector
+
+
+                        󰑓 REDIMENSIONAR                   󰄀 CAPTURAS
+                      ───────────────────────            ───────────────────────
+                      SUPER + SHIFT + →                  SUPER + P Captura → Portapapeles
+                      SUPER + SHIFT + ←
+                      SUPER + SHIFT + ↑                  SUPER + SHIFT + P
+                      SUPER + SHIFT + ↓                  Pantalla → Portapapeles
+
+                      Redimensionar activa               PRINT Guardar captura
+                                                         SHIFT + PRINT Guardar selección

@@ -1,0 +1,100 @@
+═══════════════════════════════════════
+           ATAJOS DE HYPRLAND
+═══════════════════════════════════════
+
+󰆍 APLICACIONES
+───────────────────────────────────────
+SUPER + ENTER      Terminal (Kitty)
+SUPER + B          Brave Browser
+SUPER + E          Dolphin
+SUPER + SPACE      Lanzador de aplicaciones (Rofi)
+
+󰖳 VENTANAS
+───────────────────────────────────────
+SUPER + Q          Cerrar ventana
+SUPER + F          Pantalla completa
+SUPER + CTRL + V   Alternar modo flotante
+SUPER + CTRL + P   Alternar pseudotiling
+
+SUPER + SHIFT + K  Traer ventana al frente
+SUPER + SHIFT + J  Enviar ventana al fondo
+
+󰍽 RATÓN
+───────────────────────────────────────
+SUPER + Botón Izquierdo
+Arrastrar ventana
+
+SUPER + Botón Derecho
+Redimensionar ventana
+
+󰌹 NAVEGACIÓN
+───────────────────────────────────────
+SUPER + ←          Mover foco a la izquierda
+SUPER + →          Mover foco a la derecha
+SUPER + ↑          Mover foco arriba
+SUPER + ↓          Mover foco abajo
+
+ALT + TAB          Selector de ventanas
+
+󰑓 REDIMENSIONAR
+───────────────────────────────────────
+SUPER + SHIFT + →
+SUPER + SHIFT + ←
+SUPER + SHIFT + ↑
+SUPER + SHIFT + ↓
+
+Redimensionar ventana activa
+
+󰆾 ESPACIOS DE TRABAJO
+───────────────────────────────────────
+SUPER + 1-8        Cambiar de workspace
+SUPER + CTRL + →   Workspace siguiente
+SUPER + CTRL + ←   Workspace anterior
+
+󰯌 MOVER VENTANAS
+───────────────────────────────────────
+SUPER + SHIFT + 1-8
+Mover ventana al workspace indicado
+
+SUPER + CTRL + ALT + →
+Mover ventana al workspace siguiente
+
+SUPER + CTRL + ALT + ←
+Mover ventana al workspace anterior
+
+󰘶 SCRATCHPAD
+───────────────────────────────────────
+SUPER + S          Mostrar/Ocultar Scratchpad
+SUPER + SHIFT + S  Enviar ventana al Scratchpad
+
+󰍹 PORTAPAPELES
+───────────────────────────────────────
+SUPER + V          Historial de Cliphist
+
+󰄀 CAPTURAS DE PANTALLA
+───────────────────────────────────────
+SUPER + P          Captura selección → Portapapeles
+SUPER + SHIFT + P  Captura pantalla → Portapapeles
+
+PRINT              Guardar captura completa
+SHIFT + PRINT      Guardar captura selección
+
+󰕾 AUDIO
+───────────────────────────────────────
+VOL +              Subir volumen
+VOL -              Bajar volumen
+MUTE               Silenciar salida
+MIC MUTE           Silenciar micrófono
+
+󰻃 GRABACIÓN
+───────────────────────────────────────
+SUPER + CTRL + R
+Iniciar grabación de selección
+
+SUPER + CTRL + SHIFT + R
+Detener grabación
+
+󰌾 SISTEMA
+───────────────────────────────────────
+SUPER + L          Bloquear pantalla
+SUPER + H          Mostrar esta ayuda
