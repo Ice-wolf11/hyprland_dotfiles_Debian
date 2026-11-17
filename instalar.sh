@@ -137,11 +137,46 @@ echo "==> Configurando repositorio oficial de Noctalia..."
 NOCTALIA_KEY="$TMP_DIR/nickh-archive-keyring.deb"
 NOCTALIA_SOURCE="$TMP_DIR/noctalia-trixie.sources"
 
+echo "==> Descargando clave de Noctalia..."
+
 curl -fL \
   https://pkg.noctalia.dev/deb/nickh-archive-keyring.deb \
   -o "$NOCTALIA_KEY"
 
-run_root apt-get install -y "$NOCTALIA_KEY"
+# Obtener nombre y versión del paquete descargado
+NOCTALIA_KEY_PACKAGE="$(dpkg-deb -f "$NOCTALIA_KEY" Package)"
+NOCTALIA_KEY_VERSION="$(dpkg-deb -f "$NOCTALIA_KEY" Version)"
+
+# Comprobar si ya está instalado
+INSTALLED_STATUS="$(
+  dpkg-query -W -f='${Status}' \
+    "$NOCTALIA_KEY_PACKAGE" 2>/dev/null || true
+)"
+
+INSTALLED_VERSION="$(
+  dpkg-query -W -f='${Version}' \
+    "$NOCTALIA_KEY_PACKAGE" 2>/dev/null || true
+)"
+
+if [[ "$INSTALLED_STATUS" == "install ok installed" ]]; then
+
+  if dpkg --compare-versions \
+    "$INSTALLED_VERSION" lt "$NOCTALIA_KEY_VERSION"; then
+
+    echo "==> Actualizando clave de Noctalia..."
+    run_root apt-get install -y "$NOCTALIA_KEY"
+
+  else
+    echo "==> La clave instalada es igual o más reciente."
+    echo "==> No es necesario reinstalarla."
+  fi
+
+else
+  echo "==> Instalando clave de Noctalia..."
+  run_root apt-get install -y "$NOCTALIA_KEY"
+fi
+
+echo "==> Descargando configuración del repositorio..."
 
 curl -fL \
   https://pkg.noctalia.dev/deb/noctalia-trixie.sources \
@@ -150,6 +185,8 @@ curl -fL \
 run_root install -m 0644 \
   "$NOCTALIA_SOURCE" \
   /etc/apt/sources.list.d/noctalia-trixie.sources
+
+echo "==> Actualizando índices de paquetes..."
 
 run_root apt-get update
 
@@ -254,6 +291,7 @@ HYPRLAND_PACKAGES=(
   hyprland
   hypridle
   hyprlock
+  hyprland-guiutils
   xdg-desktop-portal-hyprland
 )
 
@@ -370,11 +408,12 @@ run_root systemctl disable --now clamav-daemon.service || true
 
 echo "==> Configurando Firewalld..."
 
-run_root firewall-cmd \
-  --permanent \
-  --set-default-zone=public
+run_root firewall-cmd --set-default-zone=public
 
-run_root firewall-cmd --reload
+echo "==> Verificando Firewalld..."
+
+run_root firewall-cmd --state
+run_root firewall-cmd --get-default-zone
 
 echo "==> No se abrirán puertos adicionales."
 
