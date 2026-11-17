@@ -33,7 +33,7 @@
         "preferredPlayer": "",
         "spectrumFrameRate": 30,
         "spectrumMirrored": true,
-        "visualizerType": "wave",
+        "visualizerType": "mirrored",
         "volumeFeedback": false,
         "volumeFeedbackSoundFile": "",
         "volumeOverdrive": false,
@@ -151,7 +151,7 @@
             ],
             "right": [
                 {
-                    "compactMode": true,
+                    "compactMode": false,
                     "diskPath": "/",
                     "iconColor": "none",
                     "id": "SystemMonitor",
@@ -163,7 +163,7 @@
                     "showDiskUsage": false,
                     "showDiskUsageAsPercent": false,
                     "showGpuTemp": false,
-                    "showLoadAverage": false,
+                    "showLoadAverage": true,
                     "showMemoryAsPercent": false,
                     "showMemoryUsage": true,
                     "showNetworkStats": false,
@@ -218,7 +218,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "tonal-spot",
+        "generationMethod": "muted",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
@@ -349,8 +349,8 @@
                         "scale": 2.6436918099550417,
                         "showBackground": false,
                         "useCustomFont": false,
-                        "x": 800,
-                        "y": 140
+                        "x": 740,
+                        "y": 120
                     },
                     {
                         "hideMode": "idle",

@@ -48,6 +48,6 @@ address=$(
     cut -d'|' -f2
 )
 
-hyprctl dispatch focuswindow "address:$address"
-hyprctl dispatch alterzorder top
+hyprctl dispatch "hl.dsp.focus({ window = 'address:$address' })"
+hyprctl dispatch "hl.dsp.window.alter_zorder({ mode = 'top' })"
 rm "$TMP"
